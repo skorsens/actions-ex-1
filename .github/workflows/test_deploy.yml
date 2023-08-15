@@ -10,4 +10,15 @@ jobs:
               run: echo "Test"
             - name: Deploy
               run: echo "Deploy"
+    lint-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Lint-job
+              run: echo "Lint"
+    test-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Test-job
+              run: echo "Test"
+              
               

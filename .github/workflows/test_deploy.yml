@@ -1,0 +1,13 @@
+name: Lint Test and Deploy
+on: push
+jobs:
+    lint-test-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Lint
+              run: echo "Lint"
+            - name: Test
+              run: echo "Test"
+            - name: Deploy
+              run: echo "Deploy"
+              

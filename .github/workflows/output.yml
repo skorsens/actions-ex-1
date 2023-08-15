@@ -1,0 +1,9 @@
+name: Try github.event on issue
+on: issues
+jobs:
+    print-event:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print github.event
+              run: echo "${{ toJSON(githun.event) }}"
+              
